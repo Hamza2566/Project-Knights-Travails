@@ -13,26 +13,7 @@ export function createBoard() {
 export function makeMove(board, x, y, moveCount) {
     board[x][y] = moveCount; 
 }
-// export function knightMoves(start,target){
-//     const moves = [
-//         [2, 1], [2, -1], [-2, 1], [-2, -1],
-//         [1, 2], [1, -2], [-1, 2], [-1, -2]
-//     ];
-//     const queue = [[start , [start]]]
-//     const visited = new Set()
-//     visited.add(start.tostring())
-//     console.log(visited);
-//     while (queue.length > 0) {
-//     const [current,path]  = queue.shift()
-//     const [currentx,currenty] = current
-//     if (current[0] === target[0] && current[1] === target[1]) {
-//         return { moves: path.length - 1, path };
-//     }
-// }
 
-    
-    
-    
 export function knightMoves(start,target){
     const moves = [
         [2, 1], [2, -1], [-2, 1], [-2, -1],
